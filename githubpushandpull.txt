@@ -8,11 +8,25 @@ Push existing project/file into Github
 
 
 
-pull from git
+pull/clone from git: 
 
 git pull origin master
 
 or
 
 git clone https://github.com/username/repo-name.git
+
+Create a new repository on the command line: 
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
+
+Push an existing repository from the command line:
+
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
 
